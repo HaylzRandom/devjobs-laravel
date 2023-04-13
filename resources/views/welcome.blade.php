@@ -18,9 +18,9 @@
     {{-- Navbar --}}
     <nav class="flex items-center justify-between p-10">
         <a href="#">
-            <span class="rounded-md bg-primary p-5 text-3xl font-extrabold text-white">Dev Jobs</span>
+            <span class="p-5 text-3xl font-extrabold text-white rounded-md bg-primary">Dev Jobs</span>
         </a>
-        <ul class="mr-6 flex space-x-6 text-lg">
+        <ul class="flex mr-6 space-x-6 text-lg">
             <li>
                 <a class="hover:text-primary" href="#">
                     <i class="fa-solid fa-user-plus"></i> Register
@@ -32,8 +32,8 @@
         </ul>
     </nav>
     {{-- Hero Section --}}
-    <section class="relative mb-4 flex h-60 flex-col items-center justify-center space-y-4 bg-background text-center">
-        <div class="absolute top-0 left-0 h-full w-full bg-cover bg-center bg-no-repeat opacity-30"
+    <section class="relative flex flex-col items-center justify-center mb-4 space-y-4 text-center h-60 bg-background">
+        <div class="absolute top-0 left-0 w-full h-full bg-center bg-no-repeat bg-cover opacity-30"
             style="background-image: url('images/bg-header-desktop.svg')"></div>
         <div class="z-20 font-bold text-white">
             <h1 class="text-5xl drop-shadow-lg">Dev Jobs</h1>
@@ -50,24 +50,24 @@
     <main>
         {{-- Search --}}
         <form action="">
-            <div class="relative m-4 rounded-lg border-2 border-gray-100">
+            <div class="relative m-4 border-2 border-gray-100 rounded-lg">
                 <div class="absolute top-4 left-3">
-                    <i class="fa fa-search z-20 text-primary hover:text-background"></i>
+                    <i class="z-20 fa fa-search text-primary hover:text-background"></i>
                 </div>
-                <input class="z-0 h-14 w-full rounded-lg pl-10 pr-20 focus:shadow" id="search" name="search"
+                <input class="z-0 w-full pl-10 pr-20 rounded-lg h-14 focus:shadow" id="search" name="search"
                     type="text" autocomplete="off" placeholder="Search Dev Jobs...">
                 <div class="absolute top-2 right-2">
-                    <button class="h-10 w-20 rounded-lg bg-primary text-white hover:bg-background"
+                    <button class="w-20 h-10 text-white rounded-lg bg-primary hover:bg-background"
                         type="submit">Search</button>
                 </div>
             </div>
         </form>
 
-        <div class="mx-4 gap-4 space-y-4 pt-1 md:space-y-0 lg:grid lg:grid-cols-3">
+        <div class="gap-4 pt-1 mx-4 space-y-4 md:space-y-0 lg:grid lg:grid-cols-3">
             {{-- Item 1 --}}
-            <div class="rounded border border-gray-200 bg-gray-50 p-6">
+            <div class="p-6 border border-gray-200 rounded bg-gray-50">
                 <div class="flex">
-                    <img class="mr-6 hidden w-40 rounded-2xl md:block" src="images/manage.svg" alt="" />
+                    <img class="hidden w-40 mr-6 rounded-2xl md:block" src="images/manage.svg" alt="" />
                     <div>
                         <h3 class="text-2xl">
                             <a href="show.html">Senior Laravel Developer</a>
@@ -75,19 +75,19 @@
                         <div class="mb-4 text-xl font-bold">Acme Corp</div>
                         <ul class="flex">
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-2 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-2 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Laravel</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">API</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Backend</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Vue</a>
                             </li>
                         </ul>
@@ -99,9 +99,9 @@
                 </div>
             </div>
             {{-- Item 2 --}}
-            <div class="rounded border border-gray-200 bg-gray-50 p-6">
+            <div class="p-6 border border-gray-200 rounded bg-gray-50">
                 <div class="flex">
-                    <img class="mr-6 hidden w-40 rounded-2xl md:block" src="images/manage.svg" alt="" />
+                    <img class="hidden w-40 mr-6 rounded-2xl md:block" src="images/manage.svg" alt="" />
                     <div>
                         <h3 class="text-2xl">
                             <a href="show.html">Senior Laravel Developer</a>
@@ -109,19 +109,19 @@
                         <div class="mb-4 text-xl font-bold">Acme Corp</div>
                         <ul class="flex">
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-2 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-2 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Laravel</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">API</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Backend</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Vue</a>
                             </li>
                         </ul>
@@ -133,9 +133,9 @@
                 </div>
             </div>
             {{-- Item 3 --}}
-            <div class="rounded border border-gray-200 bg-gray-50 p-6">
+            <div class="p-6 border border-gray-200 rounded bg-gray-50">
                 <div class="flex">
-                    <img class="mr-6 hidden w-40 rounded-2xl md:block" src="images/manage.svg" alt="" />
+                    <img class="hidden w-40 mr-6 rounded-2xl md:block" src="images/manage.svg" alt="" />
                     <div>
                         <h3 class="text-2xl">
                             <a href="show.html">Senior Laravel Developer</a>
@@ -143,19 +143,19 @@
                         <div class="mb-4 text-xl font-bold">Acme Corp</div>
                         <ul class="flex">
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-2 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-2 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Laravel</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">API</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Backend</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Vue</a>
                             </li>
                         </ul>
@@ -167,9 +167,9 @@
                 </div>
             </div>
             {{-- Item 4 --}}
-            <div class="rounded border border-gray-200 bg-gray-50 p-6">
+            <div class="p-6 border border-gray-200 rounded bg-gray-50">
                 <div class="flex">
-                    <img class="mr-6 hidden w-40 rounded-2xl md:block" src="images/manage.svg" alt="" />
+                    <img class="hidden w-40 mr-6 rounded-2xl md:block" src="images/manage.svg" alt="" />
                     <div>
                         <h3 class="text-2xl">
                             <a href="show.html">Senior Laravel Developer</a>
@@ -177,19 +177,19 @@
                         <div class="mb-4 text-xl font-bold">Acme Corp</div>
                         <ul class="flex">
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-2 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-2 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Laravel</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">API</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Backend</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Vue</a>
                             </li>
                         </ul>
@@ -201,9 +201,9 @@
                 </div>
             </div>
             {{-- Item 5 --}}
-            <div class="rounded border border-gray-200 bg-gray-50 p-6">
+            <div class="p-6 border border-gray-200 rounded bg-gray-50">
                 <div class="flex">
-                    <img class="mr-6 hidden w-40 rounded-2xl md:block" src="images/manage.svg" alt="" />
+                    <img class="hidden w-40 mr-6 rounded-2xl md:block" src="images/manage.svg" alt="" />
                     <div>
                         <h3 class="text-2xl">
                             <a href="show.html">Senior Laravel Developer</a>
@@ -211,19 +211,19 @@
                         <div class="mb-4 text-xl font-bold">Acme Corp</div>
                         <ul class="flex">
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-2 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-2 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Laravel</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">API</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Backend</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Vue</a>
                             </li>
                         </ul>
@@ -235,9 +235,9 @@
                 </div>
             </div>
             {{-- Item 6 --}}
-            <div class="rounded border border-gray-200 bg-gray-50 p-6">
+            <div class="p-6 border border-gray-200 rounded bg-gray-50">
                 <div class="flex">
-                    <img class="mr-6 hidden w-40 rounded-2xl md:block" src="images/manage.svg" alt="" />
+                    <img class="hidden w-40 mr-6 rounded-2xl md:block" src="images/manage.svg" alt="" />
                     <div>
                         <h3 class="text-2xl">
                             <a href="show.html">Senior Laravel Developer</a>
@@ -245,19 +245,19 @@
                         <div class="mb-4 text-xl font-bold">Acme Corp</div>
                         <ul class="flex">
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-2 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-2 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Laravel</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">API</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Backend</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Vue</a>
                             </li>
                         </ul>
@@ -269,9 +269,9 @@
                 </div>
             </div>
             {{-- Item 6 --}}
-            <div class="rounded border border-gray-200 bg-gray-50 p-6">
+            <div class="p-6 border border-gray-200 rounded bg-gray-50">
                 <div class="flex">
-                    <img class="mr-6 hidden w-40 rounded-2xl md:block" src="images/manage.svg" alt="" />
+                    <img class="hidden w-40 mr-6 rounded-2xl md:block" src="images/manage.svg" alt="" />
                     <div>
                         <h3 class="text-2xl">
                             <a href="show.html">Senior Laravel Developer</a>
@@ -279,19 +279,19 @@
                         <div class="mb-4 text-xl font-bold">Acme Corp</div>
                         <ul class="flex">
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-2 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-2 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Laravel</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">API</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Backend</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Vue</a>
                             </li>
                         </ul>
@@ -303,9 +303,9 @@
                 </div>
             </div>
             {{-- Item 6 --}}
-            <div class="rounded border border-gray-200 bg-gray-50 p-6">
+            <div class="p-6 border border-gray-200 rounded bg-gray-50">
                 <div class="flex">
-                    <img class="mr-6 hidden w-40 rounded-2xl md:block" src="images/manage.svg" alt="" />
+                    <img class="hidden w-40 mr-6 rounded-2xl md:block" src="images/manage.svg" alt="" />
                     <div>
                         <h3 class="text-2xl">
                             <a href="show.html">Senior Laravel Developer</a>
@@ -313,19 +313,19 @@
                         <div class="mb-4 text-xl font-bold">Acme Corp</div>
                         <ul class="flex">
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-2 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-2 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Laravel</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">API</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Backend</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Vue</a>
                             </li>
                         </ul>
@@ -337,9 +337,9 @@
                 </div>
             </div>
             {{-- Item 6 --}}
-            <div class="rounded border border-gray-200 bg-gray-50 p-6">
+            <div class="p-6 border border-gray-200 rounded bg-gray-50">
                 <div class="flex">
-                    <img class="mr-6 hidden w-40 rounded-2xl md:block" src="images/manage.svg" alt="" />
+                    <img class="hidden w-40 mr-6 rounded-2xl md:block" src="images/manage.svg" alt="" />
                     <div>
                         <h3 class="text-2xl">
                             <a href="show.html">Senior Laravel Developer</a>
@@ -347,19 +347,19 @@
                         <div class="mb-4 text-xl font-bold">Acme Corp</div>
                         <ul class="flex">
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-2 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-2 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Laravel</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">API</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Backend</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Vue</a>
                             </li>
                         </ul>
@@ -371,9 +371,9 @@
                 </div>
             </div>
             {{-- Item 6 --}}
-            <div class="rounded border border-gray-200 bg-gray-50 p-6">
+            <div class="p-6 border border-gray-200 rounded bg-gray-50">
                 <div class="flex">
-                    <img class="mr-6 hidden w-40 rounded-2xl md:block" src="images/manage.svg" alt="" />
+                    <img class="hidden w-40 mr-6 rounded-2xl md:block" src="images/manage.svg" alt="" />
                     <div>
                         <h3 class="text-2xl">
                             <a href="show.html">Senior Laravel Developer</a>
@@ -381,19 +381,19 @@
                         <div class="mb-4 text-xl font-bold">Acme Corp</div>
                         <ul class="flex">
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-2 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-2 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Laravel</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">API</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Backend</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Vue</a>
                             </li>
                         </ul>
@@ -405,9 +405,9 @@
                 </div>
             </div>
             {{-- Item 6 --}}
-            <div class="rounded border border-gray-200 bg-gray-50 p-6">
+            <div class="p-6 border border-gray-200 rounded bg-gray-50">
                 <div class="flex">
-                    <img class="mr-6 hidden w-40 rounded-2xl md:block" src="images/manage.svg" alt="" />
+                    <img class="hidden w-40 mr-6 rounded-2xl md:block" src="images/manage.svg" alt="" />
                     <div>
                         <h3 class="text-2xl">
                             <a href="show.html">Senior Laravel Developer</a>
@@ -415,19 +415,19 @@
                         <div class="mb-4 text-xl font-bold">Acme Corp</div>
                         <ul class="flex">
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-2 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-2 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Laravel</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">API</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Backend</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Vue</a>
                             </li>
                         </ul>
@@ -439,9 +439,9 @@
                 </div>
             </div>
             {{-- Item 6 --}}
-            <div class="rounded border border-gray-200 bg-gray-50 p-6">
+            <div class="p-6 border border-gray-200 rounded bg-gray-50">
                 <div class="flex">
-                    <img class="mr-6 hidden w-40 rounded-2xl md:block" src="images/manage.svg" alt="" />
+                    <img class="hidden w-40 mr-6 rounded-2xl md:block" src="images/manage.svg" alt="" />
                     <div>
                         <h3 class="text-2xl">
                             <a href="show.html">Senior Laravel Developer</a>
@@ -449,19 +449,19 @@
                         <div class="mb-4 text-xl font-bold">Acme Corp</div>
                         <ul class="flex">
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-2 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-2 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Laravel</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">API</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Backend</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Vue</a>
                             </li>
                         </ul>
@@ -473,9 +473,9 @@
                 </div>
             </div>
             {{-- Item 6 --}}
-            <div class="rounded border border-gray-200 bg-gray-50 p-6">
+            <div class="p-6 border border-gray-200 rounded bg-gray-50">
                 <div class="flex">
-                    <img class="mr-6 hidden w-40 rounded-2xl md:block" src="images/manage.svg" alt="" />
+                    <img class="hidden w-40 mr-6 rounded-2xl md:block" src="images/manage.svg" alt="" />
                     <div>
                         <h3 class="text-2xl">
                             <a href="show.html">Senior Laravel Developer</a>
@@ -483,19 +483,19 @@
                         <div class="mb-4 text-xl font-bold">Acme Corp</div>
                         <ul class="flex">
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-2 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-2 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Laravel</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">API</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Backend</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Vue</a>
                             </li>
                         </ul>
@@ -507,9 +507,9 @@
                 </div>
             </div>
             {{-- Item 6 --}}
-            <div class="rounded border border-gray-200 bg-gray-50 p-6">
+            <div class="p-6 border border-gray-200 rounded bg-gray-50">
                 <div class="flex">
-                    <img class="mr-6 hidden w-40 rounded-2xl md:block" src="images/manage.svg" alt="" />
+                    <img class="hidden w-40 mr-6 rounded-2xl md:block" src="images/manage.svg" alt="" />
                     <div>
                         <h3 class="text-2xl">
                             <a href="show.html">Senior Laravel Developer</a>
@@ -517,19 +517,19 @@
                         <div class="mb-4 text-xl font-bold">Acme Corp</div>
                         <ul class="flex">
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-2 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-2 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Laravel</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">API</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Backend</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Vue</a>
                             </li>
                         </ul>
@@ -541,9 +541,9 @@
                 </div>
             </div>
             {{-- Item 6 --}}
-            <div class="rounded border border-gray-200 bg-gray-50 p-6">
+            <div class="p-6 border border-gray-200 rounded bg-gray-50">
                 <div class="flex">
-                    <img class="mr-6 hidden w-40 rounded-2xl md:block" src="images/manage.svg" alt="" />
+                    <img class="hidden w-40 mr-6 rounded-2xl md:block" src="images/manage.svg" alt="" />
                     <div>
                         <h3 class="text-2xl">
                             <a href="show.html">Senior Laravel Developer</a>
@@ -551,19 +551,19 @@
                         <div class="mb-4 text-xl font-bold">Acme Corp</div>
                         <ul class="flex">
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-2 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-2 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Laravel</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">API</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Backend</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Vue</a>
                             </li>
                         </ul>
@@ -575,9 +575,9 @@
                 </div>
             </div>
             {{-- Item 6 --}}
-            <div class="rounded border border-gray-200 bg-gray-50 p-6">
+            <div class="p-6 border border-gray-200 rounded bg-gray-50">
                 <div class="flex">
-                    <img class="mr-6 hidden w-40 rounded-2xl md:block" src="images/manage.svg" alt="" />
+                    <img class="hidden w-40 mr-6 rounded-2xl md:block" src="images/manage.svg" alt="" />
                     <div>
                         <h3 class="text-2xl">
                             <a href="show.html">Senior Laravel Developer</a>
@@ -585,19 +585,19 @@
                         <div class="mb-4 text-xl font-bold">Acme Corp</div>
                         <ul class="flex">
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-2 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-2 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Laravel</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">API</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Backend</a>
                             </li>
                             <li
-                                class="mr-2 flex items-center justify-center rounded-xl bg-primary py-1 px-3 text-xs text-white">
+                                class="flex items-center justify-center px-3 py-1 mr-2 text-xs text-white rounded-xl bg-primary">
                                 <a href="#">Vue</a>
                             </li>
                         </ul>
@@ -613,7 +613,7 @@
     </main>
     {{-- Footer --}}
     <footer
-        class="fixed bottom-0 left-0 mt-24 flex h-24 w-full items-center justify-start bg-background font-bold text-white opacity-90 md:justify-center">
+        class="fixed bottom-0 left-0 flex items-center justify-start w-full h-24 mt-24 font-bold text-white bg-background opacity-90 md:justify-center">
         <p class="ml-2">Copyright &copy; 2023, All Rights reserved</p>
         <a class="absolute top-1/3 right-10 rounded-xl border-primary bg-white py-2 px-5 text-primary shadow-lg hover:bg-primary hover:text-white hover:shadow-[0_5px_5px_rgba(0,0,0,0.75)]"
             href="#">Post Job</a>
