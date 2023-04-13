@@ -14,13 +14,13 @@
 
 </head>
 
-<body class="mb-48">
+<body class="mb-48 p-4">
     {{-- Navbar --}}
-    <nav class="flex items-center justify-between p-10">
+    <nav class="flex items-center justify-between p-5">
         <a href="/">
             <span class="rounded-md bg-primary p-5 text-3xl font-extrabold text-white">Dev Jobs</span>
         </a>
-        <ul class="mr-6 flex space-x-6 text-lg">
+        <ul class="flex space-x-6 text-lg">
             <li>
                 <a class="hover:text-primary" href="/register">
                     <i class="fa-solid fa-user-plus"></i> Register
@@ -43,7 +43,7 @@
         class="fixed bottom-0 left-0 mt-24 flex h-24 w-full items-center justify-start bg-background font-bold text-white opacity-90 md:justify-center">
         <p class="ml-2">Copyright &copy; 2023, All Rights reserved</p>
         <a class="absolute top-1/3 right-10 rounded-xl border-primary bg-white py-2 px-5 text-primary shadow-lg hover:bg-primary hover:text-white hover:shadow-[0_5px_5px_rgba(0,0,0,0.75)]"
-            href="#">Post Job</a>
+            href="/listings/create">Post Job</a>
     </footer>
 </body>
 

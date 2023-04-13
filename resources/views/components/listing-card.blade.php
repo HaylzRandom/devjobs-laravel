@@ -7,23 +7,11 @@
             alt="" />
         <div>
             <h3 class="text-2xl">
-                <a href="/listings/{{ $listing->id }}">{{ $listing->title }}</a>
+                <a class="underline-offset-4 hover:text-primary hover:underline"
+                    href="/listings/{{ $listing->id }}">{{ $listing->title }}</a>
             </h3>
-            <div class="mb-4 text-xl font-bold">{{ $listing->title }}</div>
-            <ul class="flex">
-                <li class="mr-2 flex items-center justify-center rounded-xl bg-primary px-3 py-2 text-xs text-white">
-                    <a href="#">Laravel</a>
-                </li>
-                <li class="mr-2 flex items-center justify-center rounded-xl bg-primary px-3 py-1 text-xs text-white">
-                    <a href="#">API</a>
-                </li>
-                <li class="mr-2 flex items-center justify-center rounded-xl bg-primary px-3 py-1 text-xs text-white">
-                    <a href="#">Backend</a>
-                </li>
-                <li class="mr-2 flex items-center justify-center rounded-xl bg-primary px-3 py-1 text-xs text-white">
-                    <a href="#">Vue</a>
-                </li>
-            </ul>
+            <div class="mb-4 text-xl font-bold">{{ $listing->company }}</div>
+            <x-listing-tags :tagsCsv="$listing->tags" />
             <div class="mt-4 text-lg">
                 <i class="fa-solid fa-location-dot"></i> {{ $listing->location }}
             </div>
