@@ -16,7 +16,7 @@
 
 <body class="mb-48 p-4">
     {{-- Navbar --}}
-    <nav class="flex items-center justify-between p-5">
+    <nav class="mb-6 flex items-center justify-between p-6">
         <a href="/">
             <span class="rounded-md bg-primary p-5 text-3xl font-extrabold text-white">Dev Jobs</span>
         </a>

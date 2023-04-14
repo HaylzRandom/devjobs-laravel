@@ -37,7 +37,7 @@
                 </div>
             </div>
         </x-card>
-        {{-- <x-card class="flex p-2 mt-4 space-x-6">
+        <x-card class="mt-4 flex space-x-6 p-2">
             <a href="/listings/{{ $listing->id }}/edit">
                 <i class="fa-solid fa-pencil"></i> Edit
             </a>
@@ -47,6 +47,6 @@
                 @method('DELETE')
                 <button class="text-red-500"><i class="fa-solid fa-trash"></i> Delete</button>
             </form>
-        </x-card> --}}
+        </x-card>
     </div>
 </x-layout>

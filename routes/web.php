@@ -26,20 +26,20 @@ use Illuminate\Support\Facades\Route;
 // Get All Listings
 Route::get('/', [ListingController::class, 'index']);
 
-// // Get Create New Listing Form
-// Route::get('/listings/create', [ListingController::class, 'create']);
+// Get Create New Listing Form
+Route::get('/listings/create', [ListingController::class, 'create']);
 
 // // Create and Store New Listing
-// Route::post('/listings', [ListingController::class, 'store']);
+Route::post('/listings', [ListingController::class, 'store']);
 
-// // Get Edit Listing Form
-// Route::get('/listings/{listing}/edit', [ListingController::class, 'edit']);
+// Get Edit Listing Form
+Route::get('/listings/{listing}/edit', [ListingController::class, 'edit']);
 
-// // Update Edited Listing
-// Route::put('/listings/{listing}', [ListingController::class, 'update']);
+// Update Edited Listing
+Route::put('/listings/{listing}', [ListingController::class, 'update']);
 
-// // Delete Listing
-// Route::delete('/listings/{listing}', [ListingController::class, 'destory']);
+// Delete Listing
+Route::delete('/listings/{listing}', [ListingController::class, 'destroy']);
 
 // Show Single Listing
 Route::get('listings/{listing}', [ListingController::class, 'show']);
