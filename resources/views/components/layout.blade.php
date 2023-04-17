@@ -45,6 +45,8 @@
         <a class="absolute top-1/3 right-10 rounded-xl border-primary bg-white py-2 px-5 text-primary shadow-lg hover:bg-primary hover:text-white hover:shadow-[0_5px_5px_rgba(0,0,0,0.75)]"
             href="/listings/create">Post Job</a>
     </footer>
+
+    <x-flash-message />
 </body>
 
 </html>

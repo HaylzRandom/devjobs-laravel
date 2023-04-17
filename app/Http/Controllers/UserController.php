@@ -32,7 +32,7 @@ class UserController extends Controller
         // Redirect and Login User
         auth()->login($user);
 
-        return redirect('/');
+        return redirect('/')->with('message', 'User created and logged in');
     }
 
     // Show Login Form
@@ -52,10 +52,10 @@ class UserController extends Controller
         if (auth()->attempt($formFields)) {
             $request->session()->regenerate();
 
-            return redirect('/');
+            return redirect('/')->with('message', 'You have successfully logged in');
         }
 
-        return back();
+        return back()->withErrors(['email' => 'Invalid Credentials'])->onlyInput('email');
     }
 
     // Logout User
