@@ -15,6 +15,10 @@ module.exports = {
             fontFamily: {
                 sans: ["League Spartan", "sans-serif"],
             },
+            backgroundImage: {
+                "hero-mobile": "url('/public/images/bg-header-mobile.svg')",
+                "hero-desktop": "url('/public/images/bg-header-desktop.svg')",
+            },
         },
     },
     plugins: [],
