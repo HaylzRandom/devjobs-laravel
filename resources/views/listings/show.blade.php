@@ -1,15 +1,15 @@
 <x-layout>
     @include('partials._search')
 
-    <a class="mx-4 mb-3 inline-block text-black hover:text-primary" href="/">
-        <i class="fa-solid fa-arrow-left mr-2"></i> Back
+    <a class="inline-block mx-4 mb-3 text-black hover:text-primary" href="/">
+        <i class="mr-2 fa-solid fa-arrow-left"></i> Back
     </a>
 
     <div class="mx-4">
-        <x-card class="w-100 p-10">
+        <x-card class="p-10 w-100">
             <div class="flex flex-col items-center justify-center text-center">
-                <img class="mb-6 mr-6 w-48"
-                    src="{{ $listing->logo ? asset('storage/' . $listing->logo) : asset('/images/icon-remove.svg') }}"
+                <img class="w-48 mb-6 mr-6"
+                    src="{{ $listing->logo ? asset('storage/' . $listing->logo) : asset('/images/no-image.png') }}"
                     alt="" />
 
                 <h3 class="mb-2 text-2xl">{{ $listing->title }}</h3>
@@ -18,7 +18,7 @@
                 <div class="my-6 text-lg">
                     <i class="fa-solid fa-location-dot"></i> {{ $listing->location }}
                 </div>
-                <div class="mb-6 w-full border border-gray-200"></div>
+                <div class="w-full mb-6 border border-gray-200"></div>
                 <div>
                     <h3 class="mb-4 text-3xl font-bold">
                         Job Description
@@ -26,18 +26,18 @@
                     <div class="max-w-screen-lg space-y-6 text-lg">
                         {{ $listing->description }}
 
-                        <a class="mt-6 block rounded-xl bg-primary py-2 text-white hover:opacity-80"
+                        <a class="block py-2 mt-6 text-white rounded-xl bg-primary hover:opacity-80"
                             href="mailto:{{ $listing->email }}"><i class="fa-solid fa-envelope"></i>
                             Contact Employer</a>
 
-                        <a class="block rounded-xl bg-background py-2 text-white hover:opacity-80"
+                        <a class="block py-2 text-white rounded-xl bg-background hover:opacity-80"
                             href="{{ $listing->website }}" target="_blank"><i class="fa-solid fa-globe"></i> Visit
                             Website</a>
                     </div>
                 </div>
             </div>
         </x-card>
-        <x-card class="mt-4 flex space-x-6 p-2">
+        <x-card class="flex p-2 mt-4 space-x-6">
             <a href="/listings/{{ $listing->id }}/edit">
                 <i class="fa-solid fa-pencil"></i> Edit
             </a>

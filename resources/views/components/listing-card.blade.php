@@ -2,8 +2,8 @@
 
 <x-card>
     <div class="flex">
-        <img class="mr-6 hidden w-40 rounded-2xl md:block"
-            src="{{ $listing->logo ? asset('storage/' . $listing->logo) : asset('/images/icon-remove.svg') }}"
+        <img class="hidden w-40 mr-6 rounded-2xl md:block"
+            src="{{ $listing->logo ? asset('storage/' . $listing->logo) : asset('/images/no-image.png') }}"
             alt="" />
         <div>
             <h3 class="text-2xl">
