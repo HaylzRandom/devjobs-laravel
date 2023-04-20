@@ -69,4 +69,6 @@ class UserController extends Controller
 
         return redirect('/')->with('message', 'You have now been logged out successfully');
     }
+
+    // TODO - Create function to delete User
 }

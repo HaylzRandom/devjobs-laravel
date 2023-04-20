@@ -24,6 +24,8 @@ use Illuminate\Support\Facades\Route;
 // update - Update listing
 // destroy - Delete listing
 
+// TODO - Setup authenication to hide pages
+
 // Listings
 
 // Get All Listings
