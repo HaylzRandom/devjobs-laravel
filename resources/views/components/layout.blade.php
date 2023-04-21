@@ -26,8 +26,13 @@
             @auth
                 <li>
                     <span class="text-sm font-bold uppercase md:text-lg">
-                        Welcome {{ auth()->user()->name }}
+                        Welcome {{ auth()->user()->forename . ' ' . auth()->user()->surname }}
                     </span>
+                </li>
+                <li>
+                    <a class="hover:text-primary" href="/users/profile">
+                        <i class="fa-solid fa-user"></i> Edit Profile
+                    </a>
                 </li>
                 <li>
                     <a class="hover:text-primary" href="/listings/manage">

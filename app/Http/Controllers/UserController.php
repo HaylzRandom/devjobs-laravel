@@ -17,8 +17,10 @@ class UserController extends Controller
     // Store New User
     public function store(Request $request)
     {
+        // dd($request);
         $formFields = $request->validate([
-            'name' => ['required', 'min:3'],
+            'forename' => ['required', 'min:3'],
+            'surname' => ['required', 'min:3'],
             'email' => ['required', 'email', Rule::unique('users', 'email')],
             'password' => ['required', 'confirmed', 'min:6']
         ]);
@@ -71,9 +73,39 @@ class UserController extends Controller
     }
 
     // Show Profile
-    public function edit(User $user)
+    public function edit()
     {
-        return view('users.edit', ['user' => $user]);
+        return view('users.edit', ['user' => auth()->user()]);
+    }
+
+    // Update Edited User
+    public function update(Request $request, User $user)
+    {
+        // TODO - Check current user is owner of user before editing
+
+        // $formFields = $request->validate([
+        //     'forename' => 'required',
+        //     'surname' => 'required',
+        // ]);
+
+        // Check if password has been changed
+        // if ($request->hasFile('logo')) {
+        //     $formFields['logo'] = $request->file('logo')->store('logos', 'public');
+        // }
+        // if ($request->filled('forename')) {
+        //     // $formFields = $request->validate([
+        //     //     'password' => ['required', 'confirmed', 'min:6']
+        //     // ]);
+
+        //     $formFields = $request->validate([
+        //         'forename' => 'required',
+        //         'surname' => 'required',
+        //     ]);
+        // }
+
+        // $user->update($formFields);
+
+        // return redirect('/')->with('message', 'User updated successfully!');
     }
 
     // TODO - Create function to delete User

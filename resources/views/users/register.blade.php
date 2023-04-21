@@ -12,11 +12,22 @@
         <form action="/users" method="POST">
             @csrf
             <div class="mb-6">
-                <label class="mb-2 inline-block text-lg" for="name">
-                    Name
+                <label class="mb-2 inline-block text-lg" for="forename">
+                    First Name
                 </label>
-                <input class="w-full rounded border border-gray-200 p-2" name="name" type="text"
-                    value="{{ old('name') }}">
+                <input class="w-full rounded border border-gray-200 p-2" name="forename" type="text"
+                    value="{{ old('forename') }}">
+
+                @error('name')
+                    <p class="mt-1 text-xs text-red-500">{{ $message }}</p>
+                @enderror
+            </div>
+            <div class="mb-6">
+                <label class="mb-2 inline-block text-lg" for="surname">
+                    Surname
+                </label>
+                <input class="w-full rounded border border-gray-200 p-2" name="surname" type="text"
+                    value="{{ old('surname') }}">
 
                 @error('name')
                     <p class="mt-1 text-xs text-red-500">{{ $message }}</p>
@@ -56,7 +67,7 @@
                 @enderror
             </div>
             <div class="mb-6">
-                <button class="rounded bg-primary py-2 px-4 text-white hover:bg-background" type="submit">
+                <button class="rounded bg-primary px-4 py-2 text-white hover:bg-background" type="submit">
                     Sign Up
                 </button>
             </div>
