@@ -70,5 +70,11 @@ class UserController extends Controller
         return redirect('/')->with('message', 'You have now been logged out successfully');
     }
 
+    // Show Profile
+    public function edit(User $user)
+    {
+        return view('users.edit', ['user' => $user]);
+    }
+
     // TODO - Create function to delete User
 }
