@@ -1,0 +1,20 @@
+{
+  "public/images/bg-header-desktop.svg": {
+    "file": "assets/bg-header-desktop-ed5a06a8.svg",
+    "src": "public/images/bg-header-desktop.svg"
+  },
+  "public/images/bg-header-mobile.svg": {
+    "file": "assets/bg-header-mobile-2f0f31c6.svg",
+    "src": "public/images/bg-header-mobile.svg"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-e79d945e.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-948b92bb.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}
