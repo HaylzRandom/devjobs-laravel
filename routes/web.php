@@ -61,7 +61,7 @@ Route::get('/register', [UserController::class, 'create']);
 Route::get('/users/profile', [UserController::class, 'edit']);
 
 // Update Edited User
-Route::put('/users/{user}', [ListingController::class, 'update']);
+Route::put('/users/profile/{user}', [UserController::class, 'update']);
 
 // Create and Store New User
 Route::post('/users', [UserController::class, 'store']);

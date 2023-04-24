@@ -6,7 +6,7 @@
             </h2>
         </header>
 
-        <form action="/users/{{ $user->id }}" method="POST">
+        <form action="/users/profile/{{ $user->id }}" method="POST">
             @csrf
             @method('PUT')
             <div class="mb-6">

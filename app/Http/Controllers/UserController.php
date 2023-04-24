@@ -83,25 +83,22 @@ class UserController extends Controller
     {
         // TODO - Check current user is owner of user before editing
 
-        // $formFields = $request->validate([
-        //     'forename' => 'required',
-        //     'surname' => 'required',
-        // ]);
+        $formFields = $request->validate([
+            'forename' => 'required',
+            'surname' => 'required',
+        ]);
 
-        // Check if password has been changed
-        // if ($request->hasFile('logo')) {
-        //     $formFields['logo'] = $request->file('logo')->store('logos', 'public');
-        // }
-        // if ($request->filled('forename')) {
-        //     // $formFields = $request->validate([
-        //     //     'password' => ['required', 'confirmed', 'min:6']
-        //     // ]);
+        if ($request->filled('password')) {
+            // TODO - Figure how this works
+            $formFields['password'] = $request->validate([
+                'password' => ['required', 'confirmed', 'min:6']
+            ]);
 
-        //     $formFields = $request->validate([
-        //         'forename' => 'required',
-        //         'surname' => 'required',
-        //     ]);
-        // }
+            // Hash Password
+            $formFields['password'] = bcrypt($formFields['password']);
+        }
+
+        dd($formFields);
 
         // $user->update($formFields);
 
